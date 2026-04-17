@@ -64,7 +64,7 @@ with tab1:
 
         try:
             response = requests.post(
-                "http://127.0.0.1:8000/predict",
+                "https://aircraft-engine-predictive-maintenance.onrender.com",
                 json=sensor_inputs,
                 timeout=5
             )
