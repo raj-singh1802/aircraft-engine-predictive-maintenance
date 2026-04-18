@@ -69,6 +69,9 @@ with tab1:
                 timeout=20
             )
 
+            st.write("Status Code:", response.status_code)
+            st.write("Raw Response:", response.text)
+
             result = response.json()
 
             rul_pred = result["RUL"]
