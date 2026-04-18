@@ -64,9 +64,9 @@ with tab1:
 
         try:
             response = requests.post(
-                "https://aircraft-engine-predictive-maintenance.onrender.com",
+                "https://aircraft-engine-api.onrender.com/predict",
                 json=sensor_inputs,
-                timeout=10
+                timeout=20
             )
 
             result = response.json()
